@@ -9,13 +9,10 @@ include CMakeLists.txt
 # Markdown / Text
 include LICENSE
 include README.md
-include CONTRIBUTING.md
 
 # Project files
-include .bumpversion.cfg
 include pyproject.toml
 include setup.py
-include Makefile
 
 # Remove IDE and CI/CD
 prune .vscode
@@ -29,8 +26,10 @@ prune _skbuild
 exclude .clang-format
 
 # Remove VCS assets
+exclude .bumpversion.cfg
 exclude .gitignore
 exclude .gitattributes
+exclude Makefile
 
 # Patterns to exclude from any directory
 global-exclude *~
@@ -39,4 +38,3 @@ global-exclude *.pyo
 global-exclude .git
 global-exclude .ipynb_checkpoints
 global-exclude .DS_Store
-
