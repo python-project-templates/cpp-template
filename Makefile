@@ -9,7 +9,7 @@ print-%:
 
 OTHER_ARGS :=
 
-.PHONY: develop-py develop-rust develop
+.PHONY: develop-py develop-cpp develop
 develop-py:
 	pip install -U toml
 	pip install `python -c 'import toml; c = toml.load("pyproject.toml"); print(" ".join(c["project"]["optional-dependencies"]["develop"]))'`
