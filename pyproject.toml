@@ -97,6 +97,7 @@ skip = "*win32 *arm_64"
 test-command = "python -m pytest -vvv --pyargs python_template_cpp.tests"
 test-extras = []
 test-requires = ["pytest"]
+
 [tool.coverage.run]
 branch = true
 omit = [
