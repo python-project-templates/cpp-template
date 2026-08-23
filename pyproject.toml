@@ -1,7 +1,7 @@
 [build-system]
 requires = [
     "hatchling",
-    "hatch-cpp",
+    "hatch-cpp>=0.5.0",
     "pybind11",
 ]
 build-backend = "hatchling.build"
@@ -39,7 +39,7 @@ develop = [
     "check-dist",
     "cibuildwheel",
     "codespell",
-    "hatch-cpp",
+    "hatch-cpp>=0.5.0",
     "hatchling",
     "mdformat",
     "mdformat-tables>=1",
@@ -92,6 +92,11 @@ archs = "arm64"
 [tool.cibuildwheel.windows]
 archs = "AMD64"
 skip = "*win32 *arm_64"
+
+[tool.cibuildwheel.pyodide]
+test-command = "python -m pytest -vvv --pyargs python_template_cpp.tests"
+test-extras = []
+test-requires = ["pytest"]
 
 [tool.coverage.run]
 branch = true
