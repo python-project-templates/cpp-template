@@ -1,0 +1,15 @@
+python_template_cpp.tests
+=========================
+
+.. py:module:: python_template_cpp.tests
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/python_template_cpp/tests/test_all/index
+
+

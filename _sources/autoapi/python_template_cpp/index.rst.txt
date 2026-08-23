@@ -4,6 +4,15 @@ python_template_cpp
 .. py:module:: python_template_cpp
 
 
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/python_template_cpp/tests/index
+
+
 Attributes
 ----------
 

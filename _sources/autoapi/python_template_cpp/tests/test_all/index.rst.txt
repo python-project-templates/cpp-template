@@ -1,0 +1,22 @@
+python_template_cpp.tests.test_all
+==================================
+
+.. py:module:: python_template_cpp.tests.test_all
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   python_template_cpp.tests.test_all.TestAll
+
+
+Module Contents
+---------------
+
+.. py:class:: TestAll
+
+   .. py:method:: test_all()
+
+
